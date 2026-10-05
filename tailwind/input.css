@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FutureAutoLab: longer brand name - tighten the tool-page header between 768px and 1023px so links never touch the logo */
+@media (min-width:768px) and (max-width:1023px){header nav{gap:.75rem!important}header nav>ul{gap:.75rem!important;font-size:.8rem!important}header nav>ul a{white-space:nowrap}}

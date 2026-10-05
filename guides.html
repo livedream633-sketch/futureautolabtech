@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="js/consent.js?v=3"></script>
+<meta name="google-site-verification" content="google6a08c7dbfdb2fb30">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All EV Guides: Buying, Charging, Range and Battery | FutureAutoLab</title>
+<meta name="description" content="Every FutureAutoLab guide in one place: buying and costs, charging, range and battery, and comparisons. Practical, independent EV explainers.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://futureautolabtech.com/guides.html">
+<link rel="alternate" hreflang="x-default" href="https://futureautolabtech.com/guides.html">
+<link rel="alternate" hreflang="en" href="https://futureautolabtech.com/guides.html">
+<script>if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>
+  .fv-section { background: #f8fafc; }
+  .dark .fv-section { background: #0d0f16; }
+  .fv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+  .fv-card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.07); cursor: pointer; transition: transform .2s, box-shadow .2s; text-decoration: none; display: block; border: 1px solid #e5e7eb; }
+  .fv-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,229,255,.18); border-color: #00E5FF; }
+  .dark .fv-card { background: #111318; border-color: #1e2230; }
+  .fv-thumb { position: relative; aspect-ratio: 16/9; overflow: hidden; }
+  .fv-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fv-play-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.25); opacity: 0; transition: opacity .2s; }
+  .fv-card:hover .fv-play-overlay { opacity: 1; }
+  .fv-play-icon { width: 48px; height: 48px; background: rgba(255,255,255,.95); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #ff0000; }
+  .fv-info { padding: 10px 14px 14px; }
+  .fv-title { font-weight: 600; font-size: .85rem; line-height: 1.4; color: #111; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .dark .fv-title { color: #f0f0f0; }
+  .fv-date { font-size: .72rem; color: #888; margin-top: 5px; }
+  .fv-skel { background: #fff; border-radius: 14px; overflow: hidden; }
+  .dark .fv-skel { background: #111318; }
+  .fv-skel-thumb { aspect-ratio: 16/9; background: linear-gradient(90deg,#f0f0f0 25%,#e0e0e0 50%,#f0f0f0 75%); background-size: 200% 100%; animation: fvShimmer 1.4s infinite; }
+  .dark .fv-skel-thumb { background: linear-gradient(90deg,#1e2030 25%,#252840 50%,#1e2030 75%) !important; background-size: 200% 100% !important; }
+  .fv-skel-line { height: 13px; background: #f0f0f0; border-radius: 4px; margin: 12px 14px 6px; }
+  .dark .fv-skel-line { background: #1e2030; }
+  .fv-skel-line2 { height: 10px; background: #f0f0f0; border-radius: 4px; margin: 0 14px 14px; width: 55%; }
+  .dark .fv-skel-line2 { background: #1e2030; }
+  @keyframes fvShimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+  #fv-modal { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.85); align-items: center; justify-content: center; padding: 20px; }
+  #fv-modal.open { display: flex; }
+  .fv-modal-inner { position: relative; width: 100%; max-width: 900px; background: #000; border-radius: 12px; overflow: hidden; }
+  .fv-modal-close { position: absolute; top: 10px; right: 14px; z-index: 10; background: rgba(0,0,0,.6); color: #fff; border: none; font-size: 1.5rem; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .fv-modal-embed { position: relative; padding-top: 56.25%; }
+  .fv-modal-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+</style>
+<style>
+/* ===== Google News Section ===== */
+.gnews-section { background: #fff; }
+.dark .gnews-section { background: #0a0c12; }
+.gnews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.gnews-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+  text-decoration: none;
+}
+.gnews-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,229,255,.15); border-color: #00E5FF; }
+.dark .gnews-card { background: #111318; border-color: #1e2230; }
+.gnews-source {
+  font-size: .72rem; font-weight: 700; color: #00E5FF;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.gnews-title {
+  font-size: .95rem; font-weight: 700; color: #111827; line-height: 1.45;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.dark .gnews-title { color: #f0f4ff; }
+.gnews-desc {
+  font-size: .8rem; color: #6b7280; line-height: 1.5;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.gnews-date { font-size: .72rem; color: #9ca3af; margin-top: auto; }
+/* skeleton */
+.gnews-skel { background: #f3f4f6; border-radius: 14px; padding: 18px; }
+.dark .gnews-skel { background: #111318; }
+.gnews-skel-line { height: 12px; background: linear-gradient(90deg,#e5e7eb 25%,#d1d5db 50%,#e5e7eb 75%); background-size: 200% 100%; border-radius: 6px; margin-bottom: 10px; animation: gnShimmer 1.4s infinite; }
+.dark .gnews-skel-line { background: linear-gradient(90deg,#1e2230 25%,#252840 50%,#1e2230 75%); background-size: 200% 100%; }
+@keyframes gnShimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+</style>
+
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#00E5FF">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FutureAutoLab">
+<link rel="apple-touch-icon" href="/assets/icon-192.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQQS92H7YB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VQQS92H7YB');
+</script>
+<link rel="stylesheet" href="css/tw-site.css?v=3">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FutureAutoLab">
+<meta property="og:title" content="All EV Guides: Buying, Charging, Range and Battery | FutureAutoLab">
+<meta property="og:description" content="Every FutureAutoLab guide in one place: buying and costs, charging, range and battery, and comparisons. Practical, independent EV explainers.">
+<meta property="og:url" content="https://futureautolabtech.com/guides.html">
+<meta property="og:image" content="https://futureautolabtech.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="All EV Guides: Buying, Charging, Range and Battery | FutureAutoLab">
+<meta name="twitter:description" content="Every FutureAutoLab guide in one place: buying and costs, charging, range and battery, and comparisons. Practical, independent EV explainers.">
+<meta name="twitter:image" content="https://futureautolabtech.com/assets/og-image.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://futureautolabtech.com/"}, {"@type": "ListItem", "position": 2, "name": "All EV Guides", "item": "https://futureautolabtech.com/guides.html"}]}</script>
+</head>
+<body class="bg-white dark:bg-deep-black text-gray-800 dark:text-gray-200 font-sans antialiased transition-colors duration-300">
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header class="sticky top-0 z-50 bg-white/90 dark:bg-deep-black/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 gap-4">
+      <a href="index.html" class="flex items-center flex-shrink-0" aria-label="FutureAutoLab Home">
+        <img src="assets/icon-192.png" alt="FutureAutoLab logo" width="38" height="38" style="border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;">
+        <span class="site-brand font-extrabold text-gray-900 dark:text-white">Future<span class="text-neon-blue">Auto</span>Lab</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-4 flex-1 justify-center">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="ev-news.html" class="nav-link">EV News</a>
+        <a href="car-reviews.html" class="nav-link">Car Reviews</a>
+        <a href="tech-articles.html" class="nav-link">Tech Articles</a>
+        <a href="tools-hub.html" class="nav-link">⚡ EV Tools</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <!-- Dark/Light toggle pill -->
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <span id="icon-sun">☀️</span>
+          <span id="icon-moon">🌙</span>
+        </button>
+        <a href="calculator.html" class="nav-cta hidden md:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-neon-blue text-black font-bold text-sm hover:opacity-90 transition">⚡ Calculator</a>
+        <button id="mobile-menu-btn" aria-label="Open menu" class="md:hidden p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-deep-black">
+    <div class="px-4 py-4 flex flex-col space-y-3">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="ev-news.html" class="nav-link">EV News</a>
+      <a href="car-reviews.html" class="nav-link">Car Reviews</a>
+      <a href="tech-articles.html" class="nav-link">Tech Articles</a>
+      <a href="tools-hub.html" class="nav-link">⚡ EV Tools</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="calculator.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-neon-blue text-black font-bold text-sm w-fit">⚡ EV Savings Calculator</a>
+      <!-- Mobile social icons -->
+      <div class="flex gap-3 pt-2">
+        <a href="https://www.youtube.com/@FutureAutoLab" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100092311145224" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@futureautolab" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+        </a>
+        <a href="https://whatsapp.com/channel/0029Vb8vTfdDOQIflLPZw00y" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="py-16 bg-gray-50 dark:bg-[#0d0f16] text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white">⚡ All EV Guides</h1>
+      <p class="mt-4 text-gray-600 dark:text-gray-300">Plain-language guides on buying, charging, range and batteries. Every guide is written and reviewed by Bilal Ahmad Alvi and follows our <a href="editorial-policy.html" class="text-neon-blue hover:underline">editorial policy</a>.</p>
+    </div>
+  </section>
+
+  <section class="py-12 bg-white dark:bg-deep-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title mb-10">Buying &amp; Costs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <article class="blog-card">
+          <img src="assets/img/how-to-find-a-good-ev-under-35000-2026-hero.jpg" alt="How to Find a Good EV Under $35,000 in 2026" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">💰</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(0,229,255,0.1);color:#00E5FF;">Buying & Costs</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="how-to-find-a-good-ev-under-35000-2026.html">How to Find a Good EV Under $35,000 in 2026</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">A practical guide to shopping for an affordable EV: new vs used, what specs matter, total cost, incentives and red flags…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/buying-a-used-ev-checklist-2026-hero.jpg" alt="Buying a Used EV: A 10-Point Checklist Before You Pay" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">💰</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(0,229,255,0.1);color:#00E5FF;">Buying & Costs</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="buying-a-used-ev-checklist-2026.html">Buying a Used EV: A 10-Point Checklist Before You Pay</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">A practical checklist for buying a used electric car: battery health, warranty, charging history, recalls, tires,…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-vs-hybrid-which-is-cheaper-2026-hero.jpg" alt="EV vs Hybrid vs Plug-in Hybrid: Which Is Right for You?" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">💰</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(0,229,255,0.1);color:#00E5FF;">Buying & Costs</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-vs-hybrid-which-is-cheaper-2026.html">EV vs Hybrid vs Plug-in Hybrid: Which Is Right for You?</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Compare battery electric, hybrid and plug-in hybrid cars: how each works, running costs with a worked example, and who…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-insurance-costs-2026-hero.jpg" alt="EV Insurance Costs: Why They Differ and How to Pay Less" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">💰</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(0,229,255,0.1);color:#00E5FF;">Buying & Costs</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-insurance-costs-2026.html">EV Insurance Costs: Why They Differ and How to Pay Less</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Why insuring an EV can cost more than a similar gas car, what drives your quote, and practical ways to lower it without…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-maintenance-costs-2026-hero.jpg" alt="EV Maintenance Costs: What You Save and What You Still Pay" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">💰</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(0,229,255,0.1);color:#00E5FF;">Buying & Costs</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-maintenance-costs-2026.html">EV Maintenance Costs: What You Save and What You Still Pay</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">What an electric car does and does not need in routine upkeep, with a worked yearly cost comparison against a gas car,…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-cost-of-ownership-2026-hero.jpg" alt="True Cost of Owning an EV vs Gas Car in 2026" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">💰</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(0,229,255,0.1);color:#00E5FF;">Buying & Costs</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-cost-of-ownership-2026.html">True Cost of Owning an EV vs Gas Car in 2026</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">What an EV really costs to own in 2026: energy, insurance, maintenance and depreciation compared with a gas car, with a…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 29, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/best-electric-cars-2026-hero.jpg" alt="Best Electric Cars 2026 USA: Top 10 EVs" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">💰</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(0,229,255,0.1);color:#00E5FF;">Buying & Costs</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="best-electric-cars-2026.html">Best Electric Cars 2026 USA: Top 10 EVs</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Discover the best electric cars of 2026 in the USA — range, price, charging speed, and features compared. Find the right…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Jan 10, 2026</span><span>8 min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gray-50 dark:bg-[#0d0f16]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title mb-10">Charging</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <article class="blog-card">
+          <img src="assets/img/level-1-vs-level-2-charging-2026-hero.jpg" alt="Level 1 vs Level 2 EV Charging: Which One Do You Need?" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">⚡</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(34,197,94,0.1);color:#22c55e;">Charging</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="level-1-vs-level-2-charging-2026.html">Level 1 vs Level 2 EV Charging: Which One Do You Need?</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Level 1 (120V) or Level 2 (240V)? Compare speed, cost and installation, and use a simple daily-mileage method to choose.</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/public-fast-charging-guide-2026-hero.jpg" alt="Public Fast Charging: Costs, Speed and Etiquette" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">⚡</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(34,197,94,0.1);color:#22c55e;">Charging</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="public-fast-charging-guide-2026.html">Public Fast Charging: Costs, Speed and Etiquette</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">How to use DC fast chargers step by step, what they really cost per mile compared with home charging and gas, why…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/nacs-vs-ccs-explained-2026-hero.jpg" alt="NACS vs CCS: What the EV Charging Plug Change Means for You" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">⚡</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(34,197,94,0.1);color:#22c55e;">Charging</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="nacs-vs-ccs-explained-2026.html">NACS vs CCS: What the EV Charging Plug Change Means for You</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">NACS and CCS explained in plain language: what each connector is, which cars use them, how adapters work and what to…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/kw-vs-kwh-ev-charging-explained-2026-cover.svg" alt="kW vs kWh: The EV Charging Terms Everyone Mixes Up" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">⚡</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(34,197,94,0.1);color:#22c55e;">Charging</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="kw-vs-kwh-ev-charging-explained-2026.html">kW vs kWh: The EV Charging Terms Everyone Mixes Up</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">kW measures charging speed and kWh measures battery energy. Learn the difference, the simple formula for charge time, and…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>6 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-road-trip-planning-guide-2026-hero.jpg" alt="How to Plan an EV Road Trip: A Practical Guide" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">⚡</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(34,197,94,0.1);color:#22c55e;">Charging</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-road-trip-planning-guide-2026.html">How to Plan an EV Road Trip: A Practical Guide</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Plan a stress-free EV road trip: pick a route, find reliable chargers, manage range and time, and prepare for cold…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>10 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/how-to-charge-ev-at-home-2026-hero.jpg" alt="How to Set Up Home EV Charging: 2026 Guide" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">⚡</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(34,197,94,0.1);color:#22c55e;">Charging</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="how-to-charge-ev-at-home-2026.html">How to Set Up Home EV Charging: 2026 Guide</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Level 1 vs Level 2, charger amperage, breaker sizing, permits, cost and safety: a practical guide to setting up EV…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 29, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-charging-guide-2026-hero.jpg" alt="Home vs Public EV Charging: Complete 2026 Guide" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">⚡</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(34,197,94,0.1);color:#22c55e;">Charging</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-charging-guide-2026.html">Home vs Public EV Charging: Complete 2026 Guide</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Everything American EV owners need to know about home charging (Level 1 vs Level 2) and public DC fast charging — costs,…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Aug 20, 2026</span><span>10 min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-white dark:bg-deep-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title mb-10">Range, Battery &amp; Driving</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <article class="blog-card">
+          <img src="assets/img/ev-range-in-winter-2026-hero.jpg" alt="EV Range in Winter: How Much Do You Really Lose?" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">🔋</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(168,85,247,0.1);color:#a855f7;">Range, Battery & Driving</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-range-in-winter-2026.html">EV Range in Winter: How Much Do You Really Lose?</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Cold weather cuts EV range. See why it happens, what a realistic loss looks like, and practical steps that recover miles…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-battery-degradation-2026-hero.jpg" alt="EV Battery Degradation: How Fast Do Batteries Really Age?" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">🔋</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(168,85,247,0.1);color:#a855f7;">Range, Battery & Driving</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-battery-degradation-2026.html">EV Battery Degradation: How Fast Do Batteries Really Age?</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">How much capacity EV batteries lose over time, what speeds up wear, warranty basics and simple habits that help your…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-specs-explained-kwh-range-efficiency-2026-hero.jpg" alt="EV Specs Explained: kWh, kW, Range and Efficiency" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">🔋</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(168,85,247,0.1);color:#a855f7;">Range, Battery & Driving</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-specs-explained-kwh-range-efficiency-2026.html">EV Specs Explained: kWh, kW, Range and Efficiency</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">A plain-English guide to reading an electric car spec sheet: kW versus kWh, usable battery size, efficiency in mi/kWh and…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/regenerative-braking-one-pedal-driving-2026-hero.jpg" alt="Regenerative Braking and One-Pedal Driving Explained" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">🔋</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(168,85,247,0.1);color:#a855f7;">Range, Battery & Driving</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="regenerative-braking-one-pedal-driving-2026.html">Regenerative Braking and One-Pedal Driving Explained</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">How regenerative braking turns slowing down into range, what one-pedal driving feels like, when regen is limited, and how…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 30, 2026</span><span>8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ev-battery-technology-2026-hero.jpg" alt="Solid-State Batteries in 2026: Are They Here Yet?" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">🔋</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(168,85,247,0.1);color:#a855f7;">Range, Battery & Driving</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ev-battery-technology-2026.html">Solid-State Batteries in 2026: Are They Here Yet?</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Are solid-state EV batteries finally here? A clear look at where the technology stands in 2026, why it is hard, and what…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Sep 29, 2026</span><span>8 min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gray-50 dark:bg-[#0d0f16]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title mb-10">Comparisons &amp; AI</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <article class="blog-card">
+          <img src="assets/img/tesla-vs-rivian-hero.jpg" alt="Tesla vs Rivian 2026: Which EV Brand Wins?" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">🤖</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(250,204,21,0.1);color:#eab308;">Comparisons & AI</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="tesla-vs-rivian.html">Tesla vs Rivian 2026: Which EV Brand Wins?</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">Tesla vs Rivian 2026 compared: range, price, charging network, off-road capability, and tech. Find out which EV brand…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Jan 5, 2026</span><span>9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="assets/img/ai-self-driving-cars-hero.jpg" alt="AI in Self-Driving Cars: How Close Is Level 5?" class="blog-card-img-real" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="blog-card-img-fallback" style="display:none">🤖</div>
+          <div class="p-5">
+            <span class="badge" style="background:rgba(250,204,21,0.1);color:#eab308;">Comparisons & AI</span>
+            <h3 class="mt-3 text-base font-bold text-gray-900 dark:text-white leading-snug">
+              <a href="ai-self-driving-cars.html">AI in Self-Driving Cars: How Close Is Level 5?</a>
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-400 text-xs">A deep dive into how AI powers self-driving cars in 2026 — from sensors to neural networks — and how close we really are…</p>
+            <div class="mt-3 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+              <span>Jan 5, 2026</span><span>7 min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-gray-700 dark:text-gray-300 leading-relaxed">
+    <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Where to start</h2>
+    <p class="mb-3">New to electric cars? Begin with <a href="ev-specs-explained-kwh-range-efficiency-2026.html" class="text-neon-blue hover:underline">EV specs explained</a>, then read about <a href="level-1-vs-level-2-charging-2026.html" class="text-neon-blue hover:underline">home charging levels</a> and the <a href="ev-cost-of-ownership-2026.html" class="text-neon-blue hover:underline">true cost of ownership</a>. Ready to run your own numbers? Use our <a href="tools-hub.html" class="text-neon-blue hover:underline">free EV calculators</a>.</p>
+  </section>
+</main>
+<footer class="bg-gray-900 dark:bg-black text-gray-300 pt-16 pb-8 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div><h3 class="text-2xl font-bold text-white mb-4">Future<span class="text-neon-blue">Auto</span>Lab</h3><p class="text-sm mb-4">Covering the future of Electric Vehicles, AI in Cars, and unbiased Car Reviews for a global audience.</p>
+        <div class="flex space-x-3 wl-social"><a href="https://www.youtube.com/@FutureAutoLab" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="https://www.facebook.com/profile.php?id=100092311145224" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.tiktok.com/@futureautolab" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg></a><a href="https://whatsapp.com/channel/0029Vb8vTfdDOQIflLPZw00y" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a></div>
+        
+      </div>
+      <div><h4 class="text-white font-semibold mb-4">Quick Links</h4><ul class="space-y-2 text-sm"><li><a href="index.html" class="footer-link">Home</a></li><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="contact.html" class="footer-link">Contact</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Categories</h4><ul class="space-y-2 text-sm"><li><a href="ev-news.html" class="footer-link">EV News</a></li><li><a href="car-reviews.html" class="footer-link">Car Reviews</a></li><li><a href="tech-articles.html" class="footer-link">Tech Articles</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Legal</h4><ul class="space-y-2 text-sm"><li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li><li><a href="terms.html" class="footer-link">Terms &amp; Conditions</a></li><li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li><li><a href="editorial-policy.html" class="footer-link">Editorial Policy</a></li></ul></div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-800 text-sm text-center">&copy; <span id="year">2026</span> FutureAutoLab. All Rights Reserved. Global Automotive Media</div>
+  </div>
+</footer>
+<script src="js/script.js?v=4"></script>
+
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('SW registered'))
+      .catch(err => console.log('SW error:', err));
+  });
+}
+</script>
+</body>
+</html>
