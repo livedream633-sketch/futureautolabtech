@@ -39,7 +39,7 @@ exports.handler = async (event) => {
     const url = topic === 'videos'
       ? `https://www.youtube.com/feeds/videos.xml?channel_id=${YT_CHANNEL}`
       : `https://news.google.com/rss/search?q=${encodeURIComponent(TOPICS[topic])}&hl=en-US&gl=US&ceid=US:en`;
-    const res = await fetch(url, { signal: AbortSignal.timeout(8000), headers: { 'User-Agent': 'FutureAutoLabBot/1.0 (+https://futureautolabtech.com)' } });
+    const res = await fetch(url, { signal: AbortSignal.timeout(8000), headers: { 'User-Agent': 'FutureAutoLabBot/1.0 (+https://futureautolabtech.netlify.app)' } });
     if (!res.ok) throw new Error('upstream ' + res.status);
     const xml = await res.text();
     const data = topic === 'videos'
