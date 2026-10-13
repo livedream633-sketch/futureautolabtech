@@ -5,4 +5,4 @@ Disallow: /.netlify/functions/
 User-agent: Mediapartners-Google
 Allow: /
 
-Sitemap: https://futureautolabtech.com/sitemap.xml
+Sitemap: https://futureautolabtech.netlify.app/sitemap.xml

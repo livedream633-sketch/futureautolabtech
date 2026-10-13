@@ -15,7 +15,7 @@
 Optional environment variables (Site settings -> Environment variables):
 - `BUTTONDOWN_API_KEY` - real double-opt-in newsletter (recommended)
 - `FORMSPREE_ENDPOINT` - change contact destination (default: current form id)
-- `SITE_URL` - your custom domain once you have one (e.g. https://futureautolabtech.com)
+- `SITE_URL` - your custom domain once you have one (e.g. https://futureautolabtech.netlify.app)
 
 ## Tailwind CSS (no CDN)
 Compiled files: `css/tw-site.css`, `css/tw-tools.css`. After adding new Tailwind classes run
@@ -34,7 +34,7 @@ Compiled files: `css/tw-site.css`, `css/tw-tools.css`. After adding new Tailwind
 - `netlify/functions/_keys.js` is NOT in this package any more. Never commit API keys to GitHub.
 
 ## Switching to your own domain
-> **Already applied:** this version is rebranded to FutureAutoLab and uses https://futureautolabtech.com in every canonical, sitemap, robots.txt, JSON-LD and og tag, so `set-domain.py` is no longer needed. What is left on your side: add the domain in Netlify and make it primary, set `SITE_URL` to https://futureautolabtech.com, verify the new property in Search Console, submit the sitemap.
+> **Already applied:** this version is rebranded to FutureAutoLab and uses https://futureautolabtech.netlify.app in every canonical, sitemap, robots.txt, JSON-LD and og tag, so `set-domain.py` is no longer needed. What is left on your side: add the domain in Netlify and make it primary, set `SITE_URL` to https://futureautolabtech.netlify.app, verify the new property in Search Console, submit the sitemap.
 
 1. Buy the domain, add it in Netlify -> Domain management, wait for HTTPS.
 2. From the folder that contains `set-domain.py` run: `python3 set-domain.py https://yourdomain.com`
